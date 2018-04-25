@@ -15,7 +15,7 @@
       <title>postnew blog</title>
       <link href="/2018/04/09/postnew-blog/"/>
       <url>/2018/04/09/postnew-blog/</url>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<p>12311231</p>]]></content>
       
       
     </entry>
@@ -30,5 +30,21 @@
     </entry>
     
   
+  
+    
+    <entry>
+      <title>message</title>
+      <link href="/message/index.html"/>
+      <url>/message/index.html</url>
+      <content type="html"><![CDATA[<p>有事请留言</p>]]></content>
+    </entry>
+    
+    <entry>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<p>here is something about me</p>]]></content>
+    </entry>
+    
   
 </search>

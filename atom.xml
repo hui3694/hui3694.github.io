@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>晓辉博客</title>
   
-  
+  <subtitle>记录学习的技能和遇到的问题</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
@@ -10,7 +10,7 @@
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>晓辉</name>
     
   </author>
   
@@ -35,9 +35,17 @@
     <link href="http://yoursite.com/2018/04/09/postnew-blog/"/>
     <id>http://yoursite.com/2018/04/09/postnew-blog/</id>
     <published>2018-04-09T08:22:33.000Z</published>
-    <updated>2018-04-09T08:22:33.172Z</updated>
+    <updated>2018-04-09T09:46:01.601Z</updated>
+    
+    <content type="html"><![CDATA[<p>12311231</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;12311231&lt;/p&gt;
+
+      
     
     </summary>
     
