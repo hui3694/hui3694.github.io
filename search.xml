@@ -3,19 +3,19 @@
   
     
     <entry>
-      <title>postnew blog2</title>
-      <link href="/2018/04/09/postnew-blog2/"/>
-      <url>/2018/04/09/postnew-blog2/</url>
-      <content type="html"><![CDATA[<p>2018年4月25日18:31:06</p>]]></content>
+      <title>ASP.Net缓存操作</title>
+      <link href="/2018/06/06/ASP-Net%E7%BC%93%E5%AD%98%E6%93%8D%E4%BD%9C/"/>
+      <url>/2018/06/06/ASP-Net%E7%BC%93%E5%AD%98%E6%93%8D%E4%BD%9C/</url>
+      <content type="html"><![CDATA[<blockquote><p>DTcms文件位置DTcms.Common.CacheHelper</p></blockquote><pre><code>using System;using System.Collections.Generic;using System.Text;using System.Web;using System.Web.Caching;namespace DTcms.Common{public class CacheHelper{    /// &lt;summary&gt;    /// 创建缓存项的文件    /// &lt;/summary&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    /// &lt;param name=&quot;obj&quot;&gt;object对象&lt;/param&gt;    public static void Insert(string key, object obj)    {        //创建缓存        HttpContext.Current.Cache.Insert(key, obj);    }    /// &lt;summary&gt;    /// 移除缓存项的文件    /// &lt;/summary&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    public static void Remove(string key)    {        //创建缓存        HttpContext.Current.Cache.Remove(key);    }    /// &lt;summary&gt;    /// 创建缓存项的文件依赖    /// &lt;/summary&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    /// &lt;param name=&quot;obj&quot;&gt;object对象&lt;/param&gt;    /// &lt;param name=&quot;fileName&quot;&gt;文件绝对路径&lt;/param&gt;    public static void Insert(string key, object obj, string fileName)    {        //创建缓存依赖项        CacheDependency dep = new CacheDependency(fileName);        //创建缓存        HttpContext.Current.Cache.Insert(key, obj, dep);    }    /// &lt;summary&gt;    /// 创建缓存项过期    /// &lt;/summary&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    /// &lt;param name=&quot;obj&quot;&gt;object对象&lt;/param&gt;    /// &lt;param name=&quot;expires&quot;&gt;过期时间(分钟)&lt;/param&gt;    public static void Insert(string key, object obj, int expires)    {        HttpContext.Current.Cache.Insert(key, obj, null, Cache.NoAbsoluteExpiration, new TimeSpan(0, expires, 0));    }    /// &lt;summary&gt;    /// 获取缓存对象    /// &lt;/summary&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    /// &lt;returns&gt;object对象&lt;/returns&gt;    public static object Get(string key)    {        if (string.IsNullOrEmpty(key))        {            return null;        }        return HttpContext.Current.Cache.Get(key);    }    /// &lt;summary&gt;    /// 获取缓存对象    /// &lt;/summary&gt;    /// &lt;typeparam name=&quot;T&quot;&gt;T对象&lt;/typeparam&gt;    /// &lt;param name=&quot;key&quot;&gt;缓存Key&lt;/param&gt;    /// &lt;returns&gt;&lt;/returns&gt;    public static T Get&lt;T&gt;(string key)    {        object obj = Get(key);        return obj == null ? default(T) : (T)obj;    }}</code></pre><p>}</p>]]></content>
       
       
     </entry>
     
     <entry>
-      <title>postnew blog</title>
-      <link href="/2018/04/09/postnew-blog/"/>
-      <url>/2018/04/09/postnew-blog/</url>
-      <content type="html"><![CDATA[<p>12311231</p>]]></content>
+      <title>我的第一篇文章</title>
+      <link href="/2018/04/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2018/04/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+      <content type="html"><![CDATA[<p>1111<br>hexo g #完整命令为hexo generate,用于生成静态文件</p><p>hexo s #完整命令为hexo server,用于启动服务器，主要用来本地预览</p><p>hexo d #完整命令为hexo deploy,用于将本地文件发布到github等git仓库上</p><p>hexo n “my article” #完整命令为hexo new,用于新建一篇名为“my article”的文章</p><p>作者：flappy802<br>链接：<a href="https://www.jianshu.com/p/2c9f0b3b2b0e" target="_blank" rel="noopener">https://www.jianshu.com/p/2c9f0b3b2b0e</a><br>來源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
       
       
     </entry>
